@@ -9,7 +9,7 @@ IPAddress ip{192,168,2,20}; // Dirección IPV4 del Arduino.
 EthernetClient client; // Declaración del cliente ethernet.
 /*Declaración de variables.*/
 float ledstatus;
-int pinLed = 2, pinLed1 = 0, pinButton = 4, pinServo = 7;
+int pinLed = 2, pinLed1 = 0, pinButton = 4;
 
 void setup() {
   Ethernet.begin(mac,ip); // Inicialización de la librería Ethernet y las debidas configuraciones de red.
