@@ -3,7 +3,7 @@
 #include <SPI.h>
 
 /*Configuración del módulo Ethernet W5100.*/
-byte mac[]{0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED}; // Dirección MAC (física) del Arduino.
+byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED}; // Dirección MAC (física) del Arduino.
 IPAddress server{192,168,2,100}; // Dirección IPV4 de la PC (localhost).
 IPAddress ip{192,168,2,20}; // Dirección IPV4 del Arduino.
 EthernetClient client; // Declaración del cliente ethernet.
