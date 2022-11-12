@@ -1,2 +1,2 @@
 # HMI-W5100-CONFIG
-Contiene la configuración pertinente del módulo "Ethernet W5100", facultando este el envío de peticiones tipo "GET" (HTTP Protocol) desde una placa Arduino hacia un servidor local.
+Contiene la configuración precisa del módulo "Ethernet W5100" para enviar peticiones HTTP, bajo el método "GET", desde una placa Arduino, en forma de cliente web, hacia un servidor web local o remoto.
