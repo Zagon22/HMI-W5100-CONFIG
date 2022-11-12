@@ -19,7 +19,7 @@
 	$consulta = mysqli_query($enlace, "INSERT INTO ledstatus(ledstat) VALUES ('$ledstat')"); // Inserción de los datos ingresados desde el cliente en la tabla indicada de la base de datos.
 
 	/* Bifurcación del flujo del programa según la tarea anterior */
-	if(!$consulta) 
+	if (!$consulta) 
 	{
 		echo "Error al guardar. <BR />"; // Mensaje impreso en caso de no efectuarse la instrucción sql "INSERT".
 	}
@@ -38,8 +38,10 @@
 		<TD> ID </TD>
 		<TD> Voltaje </TD>
 		</TR>";
+
 	$sql = "SELECT * FROM ledstatus"; // Selección de todas las entradas de la tabla indicada.
 	$datos = mysqli_query($enlace, $sql); // Ejecución de la selección previamente contemplada.
+
 	/* Impresión de los valores de la base de datos en la tabla */
 	while ($campo = mysqli_fetch_array($datos))
 	{
