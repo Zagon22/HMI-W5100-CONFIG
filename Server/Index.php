@@ -1,5 +1,5 @@
 <?PHP
-	/* Obtención del dato aportado por la placa Arduino (cliente web). */
+	/* Obtención del dato aportado por la placa Arduino (cliente web) */
 	if(isset($_GET['ledstat']))
 	{
 	    $ledstat = $_GET['ledstat'];
@@ -18,7 +18,7 @@
 
 	$consulta = mysqli_query($enlace, "INSERT INTO ledstatus(ledstat) VALUES ('$ledstat')"); // Inserción de los datos ingresados desde el cliente en la tabla indicada de la base de datos.
 
-	/* Bifurcación del flujo del programa según la tarea anterior. */
+	/* Bifurcación del flujo del programa según la tarea anterior */
 	if(!$consulta) 
 	{
 		echo "Error al guardar. <BR />"; // Mensaje impreso en caso de no efectuarse la instrucción sql "INSERT".
