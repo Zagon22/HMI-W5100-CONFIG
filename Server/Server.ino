@@ -5,9 +5,9 @@
 /*Configuración del módulo Ethernet W5100.*/
 byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED}; // Dirección MAC (física) del Arduino.
 /*
-Formas de referir al dominio (1 - Nombre; 2 - IP):
-char server[] = "www.hmi.danielcoria.wnpower.host/"; // Nombre del Dominio.
-IPAddress server(104,156,48,38); // Dirección IPV4 del Dominio. 
+Formas de referir al dominio (1 - DNS; 2 - IP):
+char server[] = "//Ingresar nombre del dominio";
+IPAddress server(//Ingresar dirección IPV4 del dominio); 
 */
 IPAddress ip{192,168,2,20}; // Dirección IPV4 del Arduino.
 EthernetClient client; // Declaración del cliente ethernet.
